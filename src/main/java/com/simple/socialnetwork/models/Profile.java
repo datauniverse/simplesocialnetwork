@@ -1,25 +1,26 @@
 package com.simple.socialnetwork.models;
 
 public class Profile {
-    private String fullname;
-    private String displayName;
+    private long id;
+    private String fullName;
     private String dateOfBirth;
-    private Address address;
+    private String city;
+    private String country;
 
-    public String getFullname() {
-        return fullname;
+    public long getId() {
+        return id;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public String getDisplayName() {
-        return displayName;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setDisplayName(String displayName) {
-        this.displayName = displayName;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public String getDateOfBirth() {
@@ -30,21 +31,27 @@ public class Profile {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Address getAddress() {
-        return address;
+    public String getCity() {
+        return city;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public Profile() {
+    public String getCountry() {
+        return country;
     }
 
-    public Profile(String fullname, String displayName, String dateOfBirth, Address address) {
-        this.fullname = fullname;
-        this.displayName = displayName;
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public Profile(long id, String fullName, String dateOfBirth, String city, String country) {
+        this.id = id;
+        this.fullName = fullName;
         this.dateOfBirth = dateOfBirth;
-        this.address = address;
+        this.city = city;
+        this.country = country;
     }
 }
